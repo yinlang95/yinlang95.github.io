@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  HOW TO EDIT THIS PAGE
+  - Only change the text between the tags, e.g. <p>change this</p>
+  - Anything in [SQUARE BRACKETS] is a placeholder: replace it.
+  - To add another award/publication, copy one whole block
+    (from its "START" comment to its "END" comment) and paste it below.
+  - Put your photo in the same folder and name it  photo.jpg
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lang Yin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #212529;
+      --muted: #6c757d;
+      --accent: #b509ac;
+      --rule: #dee2e6;
+      --chip-bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1c1d;
+        --text: #e8e8e8;
+        --muted: #a0a0a0;
+        --accent: #e070dc;
+        --rule: #3a3a3c;
+        --chip-bg: #1c1c1d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Top navigation bar */
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    }
+    nav .inner {
+      max-width: 930px; margin: 0 auto; padding: 12px 16px;
+      display: flex; justify-content: flex-end; gap: 24px;
+    }
+    nav a { color: var(--text); font-weight: 400; }
+    nav a.active { color: var(--accent); }
+
+    main { max-width: 930px; margin: 0 auto; padding: 32px 16px 48px; }
+
+    /* Header */
+    h1.name {
+      font-size: 2.6rem; font-weight: 300; margin: 0 0 4px;
+    }
+    h1.name b { font-weight: 700; }
+    .subtitle { color: var(--muted); margin-bottom: 24px; }
+
+    .profile {
+      float: right; width: 32%; max-width: 260px;
+      margin: 0 0 16px 24px; text-align: center;
+    }
+    .profile img {
+      width: 100%; border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    }
+    .profile .more { font-size: .9rem; color: var(--muted); margin-top: 6px; }
+
+    .bio p { margin: 0 0 14px; }
+
+    .socials {
+      clear: both; text-align: center; font-size: 2rem;
+      padding: 16px 0 8px; display: flex; justify-content: center; gap: 20px;
+    }
+    .socials a { color: var(--text); }
+    .socials a:hover { color: var(--accent); text-decoration: none; }
+
+    /* Section headings */
+    h2 {
+      font-family: "Roboto Slab", serif; font-weight: 400;
+      font-size: 1.7rem; color: var(--accent);
+      margin: 40px 0 8px; padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule);
+    }
+    ul.simple { padding-left: 22px; }
+    ul.simple li { margin-bottom: 6px; }
+
+    /* Publications */
+    ol.pubs { padding-left: 22px; }
+    ol.pubs li { margin-bottom: 22px; }
+    .pub-title { font-weight: 500; }
+    .pub-authors { font-size: .95rem; }
+    .pub-authors .me { font-weight: 700; text-decoration: underline; }
+    .pub-venue { font-weight: 700; font-style: italic; font-size: .95rem; }
+    .pub-links { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .pub-links a, .pub-links summary {
+      display: inline-block; font-size: .75rem; text-transform: uppercase;
+      padding: 1px 10px; border: 1px solid var(--text); border-radius: 3px;
+      color: var(--text); background: var(--chip-bg); cursor: pointer; list-style: none;
+    }
+    .pub-links a:hover, .pub-links summary:hover {
+      border-color: var(--accent); color: var(--accent); text-decoration: none;
+    }
+    .pub-links summary::-webkit-details-marker { display: none; }
+    .pub-links details { display: contents; }
+    .pub-links details[open] .abstract { display: block; }
+    .abstract {
+      flex-basis: 100%; font-size: .9rem; color: var(--muted);
+      border-left: 3px solid var(--rule); padding: 4px 12px; margin-top: 4px;
+    }
+
+    footer {
+      border-top: 1px solid var(--rule); text-align: center;
+      color: var(--muted); font-size: .85rem; padding: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .profile { float: none; width: 60%; margin: 0 auto 20px; }
+      h1.name { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="inner">
+      <a href="#about" class="active">About</a>
+      <a href="#publications">Publications</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ===================== NAME + EMAIL ===================== -->
+    <section id="about">
+      <h1 class="name"><b>Lang</b> Yin</h1>
+      <div class="subtitle">langyin2@illinois.edu</div>
+
+      <!-- Your photo: save it as photo.jpg in the same folder as this file -->
+      <div class="profile">
+        <img src="photo.jpg" alt="Lang Yin"
+             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 120%22><rect width=%22100%22 height=%22120%22 fill=%22%23ccc%22/><circle cx=%2250%22 cy=%2245%22 r=%2222%22 fill=%22%23999%22/><rect x=%2220%22 y=%2275%22 width=%2260%22 height=%2245%22 rx=%2230%22 fill=%22%23999%22/></svg>'">
+        <div class="more">University of Illinois Urbana-Champaign</div>
+      </div>
+
+      <!-- ===================== BIO ===================== -->
+      <div class="bio">
+        <p>
+          I am a Ph.D. student in Computer Science at the
+          <a href="https://illinois.edu">University of Illinois Urbana-Champaign</a> (UIUC),
+          advised by Prof. <a href="https://czhai.cs.illinois.edu/">ChengXiang Zhai</a>.
+          My research interests include reasoning for large language models, multimodal learning,
+          and their interplay with theoretical computer science, such as model expressivity and complexity theory.
+        </p>
+        <p>
+          Before my Ph.D., I received a B.S. in Mathematics from the University of Illinois Urbana-Champaign,
+          an M.S. in Mathematics from ETH Zurich, and an M.S. in Industrial Engineering from UIUC.
+        </p>
+      </div>
+
+      <!-- ===================== ICON LINKS =====================
+           To add GitHub / Google Scholar / LinkedIn later, copy the email line
+           and change the link and icon, e.g.
+           <a href="https://scholar.google.com/citations?user=YOUR-ID" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> -->
+      <div class="socials">
+        <a href="mailto:langyin2@illinois.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol class="pubs">
+
+        <!-- PUBLICATION START (copy from here...) -->
+        <li>
+          <div class="pub-title">MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks</div>
+          <div class="pub-authors">Zexue He*, Yu Wang*, Churan Zhi*, Yuanzhe Hu*, Tzu-Ping Chen*, <span class="me">Lang Yin</span>*, Ze Chen, Tong Arthur Wu, Siru Ouyang, Zihan Wang, Jiaxin Pei, Julian McAuley, Yejin Choi, Alex Pentland &nbsp;(*equal contribution)</div>
+          <div class="pub-venue">ICML 2026</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2602.16313">arXiv</a>
+            <a href="https://memoryarena.github.io">Website</a>
+          </div>
+        </li>
+        <!-- PUBLICATION END (...to here) -->
+
+        <li>
+          <div class="pub-title">Data Shifts Hurt Chain-of-Thought: A Case Study on Parity Learning</div>
+          <div class="pub-authors"><span class="me">Lang Yin</span>, Debangshu Banerjee, Gagandeep Singh</div>
+          <div class="pub-venue">TMLR 2026</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2506.10647">arXiv</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="pub-title">On the Expressive Power of Tree-Structured Probabilistic Circuits</div>
+          <div class="pub-authors"><span class="me">Lang Yin</span>, Han Zhao</div>
+          <div class="pub-venue">NeurIPS 2024</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2410.05465">arXiv</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="pub-title">Revisiting Scalarization in Multi-Task Learning: A Theoretical Perspective</div>
+          <div class="pub-authors">Yuzheng Hu, Ruicheng Xian, Qilong Wu, Qiuling Fan, <span class="me">Lang Yin</span>, Han Zhao</div>
+          <div class="pub-venue">NeurIPS 2023</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2308.13985">arXiv</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="pub-title">Fair and Optimal Classification via Post-Processing</div>
+          <div class="pub-authors">Ruicheng Xian, <span class="me">Lang Yin</span>, Han Zhao</div>
+          <div class="pub-venue">ICML 2023</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2211.01528">arXiv</a>
+            <a href="https://github.com/rxian/fair-classification">Code</a>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+  </main>
+
+  <footer>&copy; Copyright 2026 Lang Yin.</footer>
+
+</body>
+</html>
