@@ -80,16 +80,15 @@
       width: 100%; border-radius: 6px;
       box-shadow: 0 2px 8px rgba(0,0,0,.15);
     }
-    .profile .more { font-size: .9rem; color: var(--muted); margin-top: 6px; }
+    .photo-socials {
+      display: flex; justify-content: center; gap: 18px;
+      font-size: 1.6rem; margin-top: 10px;
+    }
+    .photo-socials a { color: var(--text); }
+    .photo-socials a:hover { color: var(--accent); text-decoration: none; }
 
     .bio p { margin: 0 0 14px; }
 
-    .socials {
-      clear: both; text-align: center; font-size: 2rem;
-      padding: 16px 0 8px; display: flex; justify-content: center; gap: 20px;
-    }
-    .socials a { color: var(--text); }
-    .socials a:hover { color: var(--accent); text-decoration: none; }
 
     /* Section headings */
     h2 {
@@ -97,6 +96,7 @@
       font-size: 1.7rem; color: var(--accent);
       margin: 40px 0 8px; padding-bottom: 6px;
       border-bottom: 1px solid var(--rule);
+      clear: both;
     }
     ul.simple { padding-left: 22px; }
     ul.simple li { margin-bottom: 6px; }
@@ -155,7 +155,13 @@
       <div class="profile">
         <img src="photo.jpg" alt="Lang Yin"
              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 120%22><rect width=%22100%22 height=%22120%22 fill=%22%23ccc%22/><circle cx=%2250%22 cy=%2245%22 r=%2222%22 fill=%22%23999%22/><rect x=%2220%22 y=%2275%22 width=%2260%22 height=%2245%22 rx=%2230%22 fill=%22%23999%22/></svg>'">
-        <div class="more">University of Illinois Urbana-Champaign</div>
+        <!-- ICON LINKS under the photo -->
+        <div class="photo-socials">
+          <a href="mailto:langyin2@illinois.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=DO6nURsAAAAJ" title="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://github.com/yinlang95" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/rlyin0171" title="X (Twitter)" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
       </div>
 
       <!-- ===================== BIO ===================== -->
@@ -173,13 +179,6 @@
         </p>
       </div>
 
-      <!-- ===================== ICON LINKS =====================
-           To add GitHub / Google Scholar / LinkedIn later, copy the email line
-           and change the link and icon, e.g.
-           <a href="https://scholar.google.com/citations?user=YOUR-ID" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> -->
-      <div class="socials">
-        <a href="mailto:langyin2@illinois.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
-      </div>
     </section>
 
     <!-- ===================== PUBLICATIONS ===================== -->
